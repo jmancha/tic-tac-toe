@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 	
-  	<link rel="stylesheet" type="text/css" href="css/main.css" />
+  		<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 
 	</head>
@@ -11,71 +11,37 @@
 		
 		<h1>Tic-Tac-Toe</h1>
 
+		<button type="button"> reset </button>
 
-	<style>
-	
-	</style>
+		<table border="20">
 
-	<script>
-	
-	function startGame() {
-		document.turn = "X";
+			<tr>
 
-		setmessage(document.turn + "starts first");
-	}
+				<td id class="Square" click=nextMove(this);>X</td>
+				<td class="Square" click=nextMove(this);></td>
+				<td class="Square" click=nextMove(this);></td>
 
-	function setmessage(message) {
-		document.getElementById('message').innerText =message;
-	}
-		function nextMove(square){
-		square.innerText = document.turn; 
-			switchTurn();
-		}
+			</tr>
 
-	function switchTurn() {
-		if (document.turn == "X") {
-			document.turn = "O";
-	} 	
-		else {
-			document.turn == "X";
-
-				}
-}
-
-	</script>
-
-
-	<button type="button"> reset </button>
-
-	<table border="20">
-
-	<tr>
-
-		<td class="Square" click=nextMove(this);></td>
-		<td class="Square" click=nextMove(this);></td>
-		<td class="Square" click=nextMove(this);></td>
-
-	</tr>
-
-	<tr>
-		<td class="square" click=nextMove(this);></td>
-		<td class="Square" click=nextMove(this);></td>
-		<td class="Square" click=nextMove(this);></td>
+			<tr>
+				<td class="square" click=nextMove(this);></td>
+				<td class="Square" click=nextMove(this);></td>
+				<td class="Square" click=nextMove(this);></td>
 		
-	</tr>
+			</tr>
 
-	<tr>
+			<tr>
 
-		<td class="Square" click=nextMove(this);></td>
-		<td class="Square" click=nextMove(this);></td>
-		<td class="Square" click=nextMove(this);></td>
+				<td class="Square" click=nextMove(this);></td>
+				<td class="Square" click=nextMove(this);></td>
+				<td class="Square" click=nextMove(this);></td>
 
-	</tr>
+			</tr>
 
 
 
-</table>
-</head>
+		</table>
 
-</body>
+		<script type="text/javascipt" src="main.js"></script>
+	</body>
 </html>
